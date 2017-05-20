@@ -1,0 +1,9 @@
+.release-page
+  section.release(v-for="release in releases")
+    header.release-header.timeline-decorator
+      span.release-version {{release.version}}
+      h3.release-date {{release.date.toDateString()}}
+    ul
+      li(v-for="change in release.changes")
+        .change-type {{change.type}}
+        .change-description {{change.description}}

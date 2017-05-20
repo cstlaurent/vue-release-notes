@@ -1,0 +1,38 @@
+{
+  "name": "vue-release-page",
+  "version": "0.0.1",
+  "description": "A Vue.js Release Page Component",
+  "author": "Carl St-Laurent",
+  "main": "dist/vue-release-page.js",
+  "license": "MIT",
+  "scripts": {
+    "dist": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",
+    "dist:demo": "vue build ./src/demo.vue --config ./build.config.js --dist ./demo/ --prod",
+    "build": "npm run dist -- --disable-compress",
+    "start": "npm run dev",
+    "dev": "vue build ./src/demo.vue --config ./build.config.js",
+    "demo:open": "open 'http://localhost:3000/'; serve ./demo/"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "vue",
+    "component"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-security": "^1.3.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.1",
+    "sass-loader": "^6.0.5",
+    "vue-cli": "^2.8.2"
+  }
+}

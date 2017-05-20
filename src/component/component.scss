@@ -1,0 +1,24 @@
+.release {
+  margin: 1em 0;
+  .release-header {
+    display: flex;
+    align-items: center;
+    .release-date {
+      margin: 0 0 5px 0.5em;
+      font-size: 190%;
+      font-weight: 300;
+    }
+
+    .release-version {
+      background-color: #ce93d8;
+      padding: 4px 1em;
+      border-radius: 5px;
+    }
+  }
+
+}
+
+.release:first-of-type .timeline-decorator::before { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1) 50px); }
+.release:last-of-type .timeline-decorator::before { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); }
+
+.timeline-decorator::before { content: ""; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); width: 3px; position: absolute; top: 0; bottom: 0; left: calc((65px / 2) + 16px); z-index: -1; }
