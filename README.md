@@ -16,6 +16,21 @@
 
 `npm i --save vue-release-page`
 
+### Import in project
+
+Import or require Vue and Vue Release Page in your code:
+``` javascript
+import Vue from 'vue'
+import VueReleasePage from 'vue-release-page'
+import 'vue-release-page/dist/vue-release-page.css'
+
+// OR
+
+var Vue = require('vue')
+var VueReleasePage = require('vue-release-page')
+require('vue-release-page/dist/vue-release-page.css')
+```
+
 ## License
 
   Copyright 2017 Carl St-Laurent
