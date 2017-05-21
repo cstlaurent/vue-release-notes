@@ -1,9 +1,9 @@
 .release-page
   section.release(v-for="release in releases")
-    header.release-header.timeline-decorator
+    header.release-header
       span.release-version {{release.version}}
       h3.release-date {{release.date.toDateString()}}
-    ul
-      li(v-for="change in release.changes")
-        .change-type {{change.type}}
+    ul.changes-list
+      li.change(v-for="change in release.changes")
+        .change-type(v-bind:class="change.type === 'new' ? 'green' : 'blue'") {{change.type}}
         .change-description {{change.description}}

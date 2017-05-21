@@ -1,24 +1,52 @@
 .release {
-  margin: 1em 0;
+  margin: 1em 0 3em 0;
   .release-header {
     display: flex;
     align-items: center;
     .release-date {
       margin: 0 0 5px 0.5em;
-      font-size: 190%;
+      font-size: 200%;
       font-weight: 300;
     }
-
     .release-version {
       background-color: #ce93d8;
-      padding: 4px 1em;
+      width: 65px;
       border-radius: 5px;
+      text-align: center;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      margin-bottom: 3px;
     }
   }
-
+  .changes-list {
+    margin-left: 40px;
+    margin-top: 0.5em;
+    list-style: none;
+    .change {
+      display: flex;
+      align-items: top;
+      margin-bottom: 0.5em;
+      .change-type {        
+        border-radius: 5px;
+        text-align: center;
+        width: 70px;
+        text-transform: uppercase;
+        font-size: 65%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-right: 1em;
+        margin-bottom: auto;
+        &.green {
+          background-color: #a5d6a7;
+        }
+        &.blue {
+          background-color: #90caf9;
+        }
+      }
+      .change-description {
+        flex: 1;
+        text-align: left;
+      }
+    }
+  }
 }
-
-.release:first-of-type .timeline-decorator::before { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1) 50px); }
-.release:last-of-type .timeline-decorator::before { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); }
-
-.timeline-decorator::before { content: ""; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); width: 3px; position: absolute; top: 0; bottom: 0; left: calc((65px / 2) + 16px); z-index: -1; }

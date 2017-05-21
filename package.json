@@ -4,7 +4,7 @@
   "description": "A Vue.js Release Page Component",
   "author": "Carl St-Laurent",
   "main": "dist/vue-release-page.js",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "dist": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",
     "dist:demo": "vue build ./src/demo.vue --config ./build.config.js --dist ./demo/ --prod",
