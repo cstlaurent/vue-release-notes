@@ -1,5 +1,5 @@
 .release {
-  margin: 1em 0 3em 0;
+  margin: 1em 0 2em 0;
   .release-header {
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@
       padding-top: 4px;
       padding-bottom: 4px;
       margin-bottom: 3px;
+      font-weight: 500;
     }
   }
   .changes-list {
@@ -31,9 +32,11 @@
         text-align: center;
         width: 70px;
         text-transform: uppercase;
-        font-size: 65%;
+        font-size: 60%;
+        font-weight: 500;
         padding-top: 2px;
         padding-bottom: 2px;
+        margin-top: 2px;
         margin-right: 1em;
         margin-bottom: auto;
         &.green {
