@@ -2,7 +2,7 @@
 
 > A Vue.js Release Page Component
 
-![Component Screenshot](/docs/assets/component-screenshot.png)
+![Component Screenshot](https://raw.githubusercontent.com/cstlaurent/vue-release-page/master/docs/assets/component-screenshot.png)
 
 # Usage
 
