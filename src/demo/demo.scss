@@ -1,8 +1,13 @@
+$break-small: 768px;
+
 body {
   font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .demo {
   text-align: center;
-  margin: 3em 10%;
+  margin: 3em 20%;
+  @media screen and (max-width: $break-small) {
+    margin: 3em 1%;
+  }
 }
