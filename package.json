@@ -1,9 +1,9 @@
 {
-  "name": "vue-release-page",
+  "name": "vue-release-notes",
   "version": "0.1.1",
-  "description": "A Vue.js Release Page Component",
+  "description": "A Vue.js Release Notes Component",
   "author": "Carl St-Laurent",
-  "main": "dist/vue-release-page.js",
+  "main": "dist/vue-release-notes.js",
   "license": "Apache-2.0",
   "scripts": {
     "dist": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",

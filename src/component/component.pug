@@ -1,9 +1,9 @@
-._release-page
+._release-notes
   section.release(v-for="release in releases")
     header.release-header
       span.release-version {{release.version}}
       h3.release-date {{release.date.toDateString()}}
     ul.changes-list
       li.change(v-for="change in release.changes")
-        .change-type(v-bind:class="change.type === 'new' ? 'green' : 'blue'") {{change.type}}
+        .change-type(v-bind:class="tagColor(change.type)") {{change.type}}
         .change-description {{change.description}}

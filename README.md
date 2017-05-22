@@ -1,8 +1,6 @@
-# vue-release-page
+# Vue.js Release Notes Component
 
-> A Vue.js Release Page Component
-
-![Component Screenshot](https://raw.githubusercontent.com/cstlaurent/vue-release-page/master/docs/assets/component-screenshot.png)
+![Component Screenshot](https://raw.githubusercontent.com/cstlaurent/vue-release-notes/master/docs/assets/component-screenshot.png)
 
 # Usage
 
@@ -10,25 +8,25 @@
 
 ### Using yarn
 
-`yarn add vue-release-page`
+`yarn add vue-release-notes`
 
 ### Using npm
 
-`npm i --save vue-release-page`
+`npm i --save vue-release-notes`
 
 ### Import in project
 
 Import or require Vue and Vue Release Page in your code:
 ``` javascript
 import Vue from 'vue'
-import VueReleasePage from 'vue-release-page'
-import 'vue-release-page/dist/vue-release-page.css'
+import VueReleaseNotes from 'vue-release-notes'
+import 'vue-release-notes/dist/vue-release-notes.css'
 
 // OR
 
 var Vue = require('vue')
-var VueReleasePage = require('vue-release-page')
-require('vue-release-page/dist/vue-release-page.css')
+var VueReleaseNote = require('vue-release-notes')
+require('vue-release-notes/dist/vue-release-notes.css')
 ```
 
 ## License

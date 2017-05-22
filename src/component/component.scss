@@ -1,6 +1,6 @@
 $break-small: 768px;
 
-._release-page {
+._release-notes {
   .release {
     margin: 1em 0 2em 0;
     .release-header {
@@ -57,6 +57,9 @@ $break-small: 768px;
           }
           &.blue {
             background-color: #90caf9;
+          }
+          &.orange {
+            background-color: #ffab91;
           }
         }
         .change-description {
