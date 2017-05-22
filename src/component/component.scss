@@ -1,12 +1,12 @@
 $break-small: 768px;
 
 ._release-notes {
-  .release {
+  ._release {
     margin: 1em 0 2em 0;
-    .release-header {
+    ._release-header {
       display: flex;
       align-items: center;
-      .release-date {
+      ._release-date {
         margin: 0 0 5px 0.5em;
         font-size: 200%;
         font-weight: 300;
@@ -15,7 +15,7 @@ $break-small: 768px;
           margin: 0 0 5px 0.3em;
         }
       }
-      .release-version {
+      ._release-version {
         background-color: #ce93d8;
         width: 65px;
         border-radius: 5px;
@@ -26,8 +26,8 @@ $break-small: 768px;
         font-weight: 500;
       }
     }
-    .changes-list {
-      margin-left: 40px;
+    ._changes-list {
+      margin-left: 80px;
       margin-top: 0.5em;
       list-style: none;
       transition: all 0.2s ease;
@@ -36,11 +36,11 @@ $break-small: 768px;
         margin-top: 0px;
         padding-left: 0px;
       }
-      .change {
+      ._change {
         display: flex;
         align-items: top;
         margin-bottom: 0.5em;
-        .change-type {        
+        ._change-type {        
           border-radius: 5px;
           text-align: center;
           width: 65px;
@@ -52,17 +52,17 @@ $break-small: 768px;
           margin-top: 2px;
           margin-right: 1em;
           margin-bottom: auto;          
-          &.green {
+          &._green {
             background-color: #a5d6a7;
           }
-          &.blue {
+          &._blue {
             background-color: #90caf9;
           }
-          &.orange {
+          &._orange {
             background-color: #ffab91;
           }
         }
-        .change-description {
+        ._change-description {
           flex: 1;
           text-align: left;
         }

@@ -7,13 +7,13 @@ export default {
       if (colorMap.has(changeType)) {
         return colorMap.get(changeType)
       } else {
-        return 'blue'
+        return '_blue'
       }
     }
   }
 }
 
 const colorMap = new Map([
-  ['new', 'green'],
-  ['fix', 'orange']
+  ['new', '_green'],
+  ['fix', '_orange']
 ])

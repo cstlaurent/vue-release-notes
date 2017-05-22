@@ -1,9 +1,9 @@
 ._release-notes
-  section.release(v-for="release in releases")
-    header.release-header
-      span.release-version {{release.version}}
-      h3.release-date {{release.date.toDateString()}}
-    ul.changes-list
-      li.change(v-for="change in release.changes")
-        .change-type(v-bind:class="tagColor(change.type)") {{change.type}}
-        .change-description {{change.description}}
+  ._release(v-for="release in releases")
+    ._release-header
+      ._release-version {{release.version}}
+      ._release-date {{release.date.toDateString()}}
+    ._changes-list
+      ._change(v-for="change in release.changes")
+        ._change-type(v-bind:class="tagColor(change.type)") {{change.type}}
+        ._change-description {{change.description}}
