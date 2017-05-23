@@ -18,6 +18,9 @@ module.exports = {
         'proccess.env.VERSION': JSON.stringify(version) // adds MyComponent.version
       })
     ]
+  },
+  filename: {
+    css: demo ? undefined : kebabCase(name) + '.css'
   }
 }
 
