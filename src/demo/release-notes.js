@@ -1,6 +1,7 @@
 export const releases = [
   {
-    version: '2.0.0',
+    version: '2.0.1',
+    type: 'v-next',
     date: new Date(2017, 5, 18),
     changes: [
       {
@@ -11,7 +12,20 @@ export const releases = [
     ]
   },
   {
+    version: '2.0.0',
+    date: new Date(2017, 5, 18),
+    type: 'released',
+    changes: [
+      {
+        type: 'new',
+        description: 'Change 2',
+        link: 'https://github.com/cstlaurent/vue-release-page/releases'
+      }
+    ]
+  },
+  {
     version: '1.0.0',
+    type: 'released',
     date: new Date(2017, 4, 3),
     changes: [
       {
