@@ -9,6 +9,9 @@ export default {
       } else {
         return '_blue'
       }
+    },
+    showType (type) {
+      return !hiddenTypes.includes(type)
     }
   }
 }
@@ -17,3 +20,5 @@ const colorMap = new Map([
   ['new', '_green'],
   ['fix', '_orange']
 ])
+
+const hiddenTypes = ['v-next']
