@@ -6,4 +6,4 @@
     ._changes-list(v-if="showType(release.type)")
       ._change(v-for="change in release.changes")
         ._change-type(v-bind:class="tagColor(change.type)") {{change.type}}
-        ._change-description {{change.description}}
+        ._change-description(v-html="change.description")
