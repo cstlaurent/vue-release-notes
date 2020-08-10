@@ -18,7 +18,7 @@
 
 Import or require Vue and Vue Release Page in your code:
 
-``` javascript
+```javascript
 import Vue from 'vue'
 import VueReleaseNotes from 'vue-release-notes'
 import 'vue-release-notes/dist/vue-release-notes.css'
@@ -42,15 +42,16 @@ export default {
 ```
 
 You can then use it in your application's HTML:
-``` html
-<vue-release-notes v-bind:releases="releases">
+
+```html
+<vue-release-notes v-bind:releases="releases"></vue-release-notes>
 ```
 
 ### Schema
 
 Here is an example schema that can be passed to the component prop.
 
-``` javascript
+```javascript
 const releases = [
   {
     version: '2.0.0',
@@ -58,12 +59,11 @@ const releases = [
     changes: [
       {
         type: 'new',
-        description: 'Change Description'
-      }
-    ]
-  }
+        description: 'Change Description',
+      },
+    ],
+  },
 ]
-
 ```
 
 ### Fields
@@ -98,16 +98,16 @@ Description of the change
 
 ## License
 
-  Copyright 2017 Carl St-Laurent
+Copyright 2017-2020 Carl St-Laurent
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-  [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
